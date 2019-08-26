@@ -1,0 +1,39 @@
+.btn {
+  &,
+  &:active,
+  &:visited {
+    padding: 1rem 3.5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  &--white {
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-grey;
+
+    &:hover {
+      background-color: $color-grey;
+    }
+  }
+
+  &--black {
+    color: $color-white;
+    background-color: $color-black;
+    border: 1px solid $color-black;
+
+    &:hover {
+      background-color: $color-grey;
+      border: 1px solid $color-grey;
+      color: $color-black;
+    }
+  }
+
+  &--disabled {
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}

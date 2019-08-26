@@ -1,0 +1,83 @@
+.box {
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.45);
+  &__data {
+    padding: 2rem;
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    background-color: $background-color;
+    padding: 2.5rem 1rem;
+
+    &--h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+  // this is from box list container
+
+  //This is container number 2 it is inside box__container-main and is used to bring the content side by side
+  &__list-container-sub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey;
+    }
+
+    &:hover {
+      background-color: $color-grey;
+    }
+  }
+
+  &__container-image {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__container-img {
+    width: 100%;
+  }
+
+  &__paragraph {
+    padding-left: 1rem;
+    &--main {
+      display: block;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    &--sub {
+      display: block;
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+  }
+
+  // this container is used for tags in website
+  &__tags {
+    padding: 2rem 1rem;
+  }
+
+  &__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__tag-items {
+    background-color: $background-color;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    text-decoration: capitalize;
+
+    &--black {
+      background-color: $color-black !important;
+      color: $color-white;
+    }
+  }
+}
